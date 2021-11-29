@@ -23,3 +23,9 @@ def getMessageFeedBack() :
         },
     ]
     return jsonify(res) 
+@output.route('/feedback',methods=['POST'])
+def postFeedBack():
+    pass
+@output.route('/report',methods =['POST'])
+def postReportSupport():
+    pass 

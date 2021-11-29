@@ -5,6 +5,7 @@ from flask import Blueprint, request, jsonify
 @output.route('/rating/<id>', methods=['GET'])
 def getRatingWithID(id):
     null = None
+    filter_rating= request.args.get('filter')
     res = {
     }
     res["status_code"] = 200
