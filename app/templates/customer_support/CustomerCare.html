@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chăm sóc khách hàng</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/CustomerCare.css') }}">
+</head>
+
+<body>
+    <main class="styles__StyledMain-sc-eixiv2-0 dDbRwt">
+        <div class="container-divider"></div>
+        <div class="Container-sc-iqybzy-0 caJrKz">
+            <h1 class="title"> Đội ngũ chăm sóc khách hàng</h1>
+            <p>Luôn sẵn sàng lắng nghe câu hỏi và ý kiến đóng góp từ bạn. Chúng tôi sẽ phản hồi ngay trong 24h tiếp
+                theo!
+            </p>
+
+            <div class="styles__StyledForm-sc-1bw8qmr-0 bJtIjz">
+                <div class="styles__FormItem-sc-1bw8qmr-1 lolHRb"><label
+                        style="font-size:15px;line-height:1.5;font-weight:bold;margin-bottom:8px">Hãy chọn vấn đề bên
+                        dưới nhé</label>
+                    <div class="style__StyledRCSelect-sc-1jb5uhz-0 dhUHhV">
+                        <div class="rc-select rc-select-enabled">
+                            <div class="rc-select-selection
+        rc-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                aria-controls="eaa71e5c-5c00-4415-cd00-30a2250ab882" aria-expanded="false" tabindex="0">
+                                <div class="rc-select-selection__rendered">
+                                    <div style="display:block;user-select:none;-webkit-user-select:none"
+                                        unselectable="on" class="rc-select-selection__placeholder">Vấn đề hỗ trợ chính
+                                    </div>
+                                    <div class="rc-select-search rc-select-search--inline" style="display:none">
+                                        <div class="rc-select-search__field__wrap"><input autocomplete="off" value=""
+                                                class="rc-select-search__field"><span
+                                                class="rc-select-search__field__mirror">&nbsp;</span></div>
+                                    </div>
+                                </div><span class="rc-select-arrow" style="user-select:none;-webkit-user-select:none"
+                                    unselectable="on"><i class="rc-select-arrow-icon"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="styles__FormItem-sc-1bw8qmr-1 iVyHRp">
+                    <div class="style__StyledRCSelect-sc-1jb5uhz-0 dhUHhV">
+                        <div class="rc-select rc-select-enabled">
+                            <div class="rc-select-selection
+        rc-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                aria-controls="a48df99b-c664-43da-85c5-066451768415" aria-expanded="false" tabindex="0">
+                                <div class="rc-select-selection__rendered">
+                                    <div style="display:block;user-select:none;-webkit-user-select:none"
+                                        unselectable="on" class="rc-select-selection__placeholder">Vấn đề hỗ trợ chi
+                                        tiết
+                                    </div>
+                                    <div class="rc-select-search rc-select-search--inline" style="display:none">
+                                        <div class="rc-select-search__field__wrap"><input autocomplete="off" value=""
+                                                class="rc-select-search__field"><span
+                                                class="rc-select-search__field__mirror">&nbsp;</span></div>
+                                    </div>
+                                </div><span class="rc-select-arrow" style="user-select:none;-webkit-user-select:none"
+                                    unselectable="on"><i class="rc-select-arrow-icon"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="styles__FormItem-sc-1bw8qmr-1 lolHRb"><label>Địa chỉ email của bạn</label><input type="text"
+                        style="width:100%;box-sizing:border-box" name="email" placeholder="Nhập địa chỉ email" value=""
+                        class="Input-sc-17i9bto-0 girQwT"></div>
+                <div class="styles__FormItem-sc-1bw8qmr-1 lolHRb"><label>Số điện thoại</label><input type="text"
+                        style="width:100%;box-sizing:border-box" name="phone" placeholder="Nhập số điện thoại" value=""
+                        class="Input-sc-17i9bto-0 girQwT"></div>
+                <div class="styles__FormItem-sc-1bw8qmr-1 iVyHRp"><label>Mã đơn hàng</label><textarea
+                        class="Input__TextArea-sc-17i9bto-1 ekRedY order_number" type="textarea" rows="1"
+                        style="width:100%;box-sizing:border-box" name="order_number"
+                        placeholder="Bạn có thể nhập nhiều mã đơn hàng, cách nhau bằng dấu &quot;,&quot;"></textarea>
+                </div>
+                <div style="margin-bottom:50px" class="styles__FormItem-sc-1bw8qmr-1 lolHRb"><label>Tiêu
+                        đề</label><input type="text" style="width:100%;box-sizing:border-box" name="subject"
+                        placeholder="Nhập tiêu đề" value="" class="Input-sc-17i9bto-0 girQwT"></div>
+                <div class="styles__FormItem-sc-1bw8qmr-1 lolHRb"><label>Nội dung</label><textarea rows="5"
+                        type="textarea" style="width:100%;box-sizing:border-box" name="description"
+                        placeholder="Mô tả chi tiết vấn đề của bạn"
+                        class="Input__TextArea-sc-17i9bto-1 ekRedY"></textarea></div>
+                <div class="styles__FormItem-sc-1bw8qmr-1 iVyHRp"><label>Tập tin đính kèm</label>
+                    <div class="styles__FileUpload-sc-1bw8qmr-2 hQepyF"><input type="file" multiple=""
+                            style="width:100%" name="file_list">
+                        <div class="upload-text"><span>Thêm tập tin</span> hoặc thả tập tin ở đây</div>
+                    </div>
+                    <div class="styles__StyledFileList-sc-1bw8qmr-4 ftdHA-d"></div>
+                </div><button class="styles__SubmitButton-sc-1bw8qmr-3 hQLuy">Gửi</button>
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+                    <input type="hidden" name="orgid" value="00D5Y000002VAOf"><input type="hidden" name="retURL"
+                        value="https://hotro.tiki.vn"><input type="hidden" name="00N5Y00000TZwcv" value=""><input
+                        type="hidden" name="00N5Y00000TZwcw" value="">
+                    <input type="hidden" name="email" value=""><input type="hidden" name="phone" value=""><input
+                        type="hidden" name="00N5Y00000TZwcc" value=""><input type="hidden" name="subject"
+                        value=""><input type="hidden" name="description" value="">
+                    <input type="hidden" name="00N5Y00000TZwcR" value="hotro.tiki.vn"><input type="hidden"
+                        name="recordType" value="0125Y0000023rtD">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+from app.rating.views import rating # noqa

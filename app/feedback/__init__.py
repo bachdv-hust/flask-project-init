@@ -1,0 +1,1 @@
+from app.feedback.views import feedback # noqa
