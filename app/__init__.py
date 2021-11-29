@@ -13,6 +13,6 @@ def createApp ():
     from .customer_support import support as support_blueprint
     app.register_blueprint(support_blueprint)
     return app
+app  = createApp()
 if __name__ == '__main__':
-    app  = createApp()
     app.run(threaded=True, port=5000)

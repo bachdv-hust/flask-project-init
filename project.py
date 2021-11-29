@@ -1,4 +1,4 @@
-from app import createApp
+from app import app
 
 # app = createApp()
 # app.run()
