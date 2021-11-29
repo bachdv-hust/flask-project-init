@@ -41,4 +41,17 @@ def getLoyalty_poin():
             "point" : 15
         }
     return jsonify(res)
+@output.route('/payment/voicher/<id>',methods=['GET'])
+def getVoicherDetail(id):
+    res = {
+    }
+    res["status_code"] = 200
+    res["data"] ={
+        "title" :"Giảm 1 nửa giá sp",
+        "id" :1,
+    }
+    return jsonify(res)
 
+@output.route('/payment/return_product',methods=['GET'])
+def getListReturnProduct ():
+    pass

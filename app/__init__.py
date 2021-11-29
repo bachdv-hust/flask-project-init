@@ -1,6 +1,7 @@
 import os
 from flask import Flask
 app = Flask(__name__)
+app.config['TESTING'] = True
 from .main import main as main_blueprint
 app.register_blueprint(main_blueprint)
 from .rating import rating as rating_blueprint
@@ -12,4 +13,4 @@ app.register_blueprint(support_blueprint)
 from .output_api import output as output_blueprint
 app.register_blueprint(output_blueprint)
 if __name__ == '__main__':
-    app.run(threaded=True, port=5000)
+    app.run(threaded=True, port=7000)
