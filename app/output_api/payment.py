@@ -4,8 +4,8 @@ from flask import Blueprint, request, jsonify
 # lấy thông tin sản phẩm muốn đổi
 
 
-@output.route('/payment/exchange_product', methods=['GET'])
-def getExchangeProduct():
+@output.route('/payment/exchange_product/<idUser>', methods=['GET'])
+def getExchangeProduct(idUser):
     null = None
     res = {
     }
@@ -25,8 +25,8 @@ def getExchangeProduct():
 
     ]
     return jsonify(res)
-@output.route('/payment/return_product',methods=['GET'])
-def getListReturnProduct ():
+@output.route('/payment/return_product/<idUser>',methods=['GET'])
+def getListReturnProduct (idUser):
     res = {
 
     }
@@ -47,8 +47,8 @@ def getListReturnProduct ():
     ]
     return jsonify(res)
 
-@output.route('/payment/loyalty_poin', methods=['GET','POST'])
-def getLoyalty_poin():
+@output.route('/payment/loyalty_poin/<id>', methods=['GET','POST'])
+def getLoyalty_poin(id):
     
     null = None
     res = {
