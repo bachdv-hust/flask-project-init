@@ -6,5 +6,5 @@ feedback = Blueprint('feedback', __name__)
 
 @feedback.route('/feedback')
 def index():
-    return render_template('feedback/FeedBack.html')
+    return render_template('feedback/Feedback.html')
 
