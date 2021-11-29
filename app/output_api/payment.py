@@ -25,6 +25,28 @@ def getExchangeProduct():
 
     ]
     return jsonify(res)
+@output.route('/payment/return_product',methods=['GET'])
+def getListReturnProduct ():
+    res = {
+
+    }
+    res["status_code"] =200
+    res["data"] =[
+        {
+            "id":1,
+            "name":"áo dài"
+        },
+        {
+            "id":2,
+            "name":"áo dài"
+        },
+        {
+            "id":2,
+            "name":"áo dài"
+        },
+    ]
+    return jsonify(res)
+
 @output.route('/payment/loyalty_poin', methods=['GET','POST'])
 def getLoyalty_poin():
     
@@ -52,6 +74,3 @@ def getVoicherDetail(id):
     }
     return jsonify(res)
 
-@output.route('/payment/return_product',methods=['GET'])
-def getListReturnProduct ():
-    pass
