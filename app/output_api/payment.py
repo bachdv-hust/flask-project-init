@@ -26,7 +26,7 @@ def getExchangeProduct():
     ]
     return jsonify(res)
 @output.route('/payment/loyalty_poin', methods=['GET','POST'])
-def getExchangeProduct():
+def getLoyalty_poin():
     
     null = None
     res = {
